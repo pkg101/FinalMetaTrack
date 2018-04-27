@@ -11,7 +11,6 @@ import org.json.JSONObject;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import dataContainer.DataWarehouse;
-import dataContainer.RestResourceURL;
 
 public class MetadataResource {
 	Document doc;
@@ -55,8 +54,8 @@ public class MetadataResource {
 						Element xmlapexclassMembers = doc.createElement("members");
 						xmlapexclassMembers
 								.appendChild(doc.createTextNode(apexclassArray.getJSONObject(i).getString("Name")
-										+ "###" + userfullname + "###" + RestResourceURL.getSuffixDate(
-												apexclassArray.getJSONObject(i).getString("LastModifiedDate"))));
+										+ "###" + userfullname + "###" + 
+												apexclassArray.getJSONObject(i).getString("LastModifiedDate")));
 						xmlapexclasstype.appendChild(xmlapexclassMembers);
 
 					}
@@ -98,8 +97,8 @@ public class MetadataResource {
 						Element xmlapextriggerMembers = doc.createElement("members");
 						xmlapextriggerMembers
 								.appendChild(doc.createTextNode(apexTriggerArray.getJSONObject(i).getString("Name")
-										+ "###" + userfullname + "###" + RestResourceURL.getSuffixDate(
-												apexTriggerArray.getJSONObject(i).getString("LastModifiedDate"))));
+										+ "###" + userfullname + "###" + 
+												apexTriggerArray.getJSONObject(i).getString("LastModifiedDate")));
 						xmlapextriggertype.appendChild(xmlapextriggerMembers);
 
 					} catch (Exception e) {
@@ -138,8 +137,8 @@ public class MetadataResource {
 						Element xmlapexPageMembers = doc.createElement("members");
 						xmlapexPageMembers
 								.appendChild(doc.createTextNode(apexPageArray.getJSONObject(i).getString("Name") + "###"
-										+ userfullname + "###" + RestResourceURL.getSuffixDate(
-												apexPageArray.getJSONObject(i).getString("LastModifiedDate"))));
+										+ userfullname + "###" + 
+												apexPageArray.getJSONObject(i).getString("LastModifiedDate")));
 						xmlapexPagetype.appendChild(xmlapexPageMembers);
 
 					} catch (Exception e) {
@@ -180,8 +179,8 @@ public class MetadataResource {
 						Element xmlapexComponentMembers = doc.createElement("members");
 						xmlapexComponentMembers
 								.appendChild(doc.createTextNode(apexComponentArray.getJSONObject(i).getString("Name")
-										+ "###" + userfullname + "###" + RestResourceURL.getSuffixDate(
-												apexComponentArray.getJSONObject(i).getString("LastModifiedDate"))));
+										+ "###" + userfullname + "###" + 
+												apexComponentArray.getJSONObject(i).getString("LastModifiedDate")));
 						xmlapexComponenttype.appendChild(xmlapexComponentMembers);
 
 					} catch (Exception e) {
@@ -224,8 +223,8 @@ public class MetadataResource {
 						xmlassignmentRuleMembers.appendChild(
 								doc.createTextNode(assignmentRuleArray.getJSONObject(i).getString("EntityDefinitionId")
 										+ "." + assignmentRuleArray.getJSONObject(i).getString("Name") + "###"
-										+ userfullname + "###" + RestResourceURL.getSuffixDate(
-												assignmentRuleArray.getJSONObject(i).getString("LastModifiedDate"))));
+										+ userfullname + "###" + 
+												assignmentRuleArray.getJSONObject(i).getString("LastModifiedDate")));
 						xmlassignmentRuletype.appendChild(xmlassignmentRuleMembers);
 
 					} catch (Exception e) {
@@ -268,8 +267,8 @@ public class MetadataResource {
 						Element xmlAuraDefinitionBundleMembers = doc.createElement("members");
 						xmlAuraDefinitionBundleMembers.appendChild(doc.createTextNode(auraDefinitionBundleArray
 								.getJSONObject(i).getString("DeveloperName") + "###" + userfullname + "###"
-								+ RestResourceURL.getSuffixDate(
-										auraDefinitionBundleArray.getJSONObject(i).getString("LastModifiedDate"))));
+								+ 
+										auraDefinitionBundleArray.getJSONObject(i).getString("LastModifiedDate")));
 						xmlAuraDefinitionBundletype.appendChild(xmlAuraDefinitionBundleMembers);
 
 					}
@@ -310,8 +309,8 @@ public class MetadataResource {
 						Element xmlautoResponseListMembers = doc.createElement("members");
 						xmlautoResponseListMembers
 								.appendChild(doc.createTextNode(autoResponseArray.getJSONObject(i).getString("Name")
-										+ "###" + userfullname + "###" + RestResourceURL.getSuffixDate(
-												autoResponseArray.getJSONObject(i).getString("LastModifiedDate"))));
+										+ "###" + userfullname + "###" + 
+												autoResponseArray.getJSONObject(i).getString("LastModifiedDate")));
 						xmlautoResponseListtype.appendChild(xmlautoResponseListMembers);
 
 					} catch (Exception e) {
@@ -355,8 +354,8 @@ public class MetadataResource {
 						Element xmlbusinessProcessMembers = doc.createElement("members");
 						xmlbusinessProcessMembers
 								.appendChild(doc.createTextNode(businessProcessArray.getJSONObject(i).getString("Name")
-										+ "###" + userfullname + "###" + RestResourceURL.getSuffixDate(
-												businessProcessArray.getJSONObject(i).getString("LastModifiedDate"))));
+										+ "###" + userfullname + "###" + 
+												businessProcessArray.getJSONObject(i).getString("LastModifiedDate")));
 						xmlbusinessProcesstype.appendChild(xmlbusinessProcessMembers);
 
 					} catch (Exception e) {
@@ -398,8 +397,8 @@ public class MetadataResource {
 						xmlcompactLayoutMembers.appendChild(
 								doc.createTextNode(compactLayoutArray.getJSONObject(i).getString("SobjectType") + "."
 										+ compactLayoutArray.getJSONObject(i).getString("DeveloperName") + "###"
-										+ userfullname + "###" + RestResourceURL.getSuffixDate(
-												compactLayoutArray.getJSONObject(i).getString("LastModifiedDate"))));
+										+ userfullname + "###" + 
+												compactLayoutArray.getJSONObject(i).getString("LastModifiedDate")));
 						xmlcompactLayouttype.appendChild(xmlcompactLayoutMembers);
 
 					} catch (Exception e) {
@@ -442,8 +441,8 @@ public class MetadataResource {
 						Element xmlconnectedApplicationMembers = doc.createElement("members");
 						xmlconnectedApplicationMembers.appendChild(doc.createTextNode(connectedApplicationArray
 								.getJSONObject(i).getString("Name") + "###" + userfullname + "###"
-								+ RestResourceURL.getSuffixDate(
-										connectedApplicationArray.getJSONObject(i).getString("LastModifiedDate"))));
+								+ 
+										connectedApplicationArray.getJSONObject(i).getString("LastModifiedDate")));
 						xmlconnectedApplicationtype.appendChild(xmlconnectedApplicationMembers);
 
 					} catch (Exception e) {
@@ -486,8 +485,8 @@ public class MetadataResource {
 						Element xmlcustomApplicationMembers = doc.createElement("members");
 						xmlcustomApplicationMembers.appendChild(doc.createTextNode(customApplicationArray
 								.getJSONObject(i).getString("DeveloperName") + "###" + userfullname + "###"
-								+ RestResourceURL.getSuffixDate(
-										customApplicationArray.getJSONObject(i).getString("LastModifiedDate"))));
+								+ 
+										customApplicationArray.getJSONObject(i).getString("LastModifiedDate")));
 						xmlcustomApplicationtype.appendChild(xmlcustomApplicationMembers);
 
 					} catch (Exception e) {
@@ -528,8 +527,8 @@ public class MetadataResource {
 						Element xmlcustomobjectMembers = doc.createElement("members");
 						xmlcustomobjectMembers.appendChild(
 								doc.createTextNode(customobjectArray.getJSONObject(i).getString("DeveloperName") + "__c"
-										+ "###" + userfullname + "###" + RestResourceURL.getSuffixDate(
-												customobjectArray.getJSONObject(i).getString("LastModifiedDate"))));
+										+ "###" + userfullname + "###" + 
+												customobjectArray.getJSONObject(i).getString("LastModifiedDate")));
 						xmlcustomobjecttype.appendChild(xmlcustomobjectMembers);
 
 					} catch (Exception e) {
@@ -584,8 +583,8 @@ public class MetadataResource {
 					Element xmlcustomfieldMembers = doc.createElement("members");
 					xmlcustomfieldMembers.appendChild(doc.createTextNode(
 							customObjectName + "." + customFieldArray.getJSONObject(j).getString("DeveloperName")
-									+ "__c" + "###" + userfullname + "###" + RestResourceURL.getSuffixDate(
-											customFieldArray.getJSONObject(j).getString("LastModifiedDate"))));
+									+ "__c" + "###" + userfullname + "###" + 
+											customFieldArray.getJSONObject(j).getString("LastModifiedDate")));
 					xmlcustomfieldtype.appendChild(xmlcustomfieldMembers);
 
 				}
@@ -624,8 +623,8 @@ public class MetadataResource {
 						Element xmlcustomTabMembers = doc.createElement("members");
 						xmlcustomTabMembers
 								.appendChild(doc.createTextNode(customTabFullname.getJSONObject(0).getString("FullName")
-										+ "###" + userfullname + "###" + RestResourceURL.getSuffixDate(
-												customTabArray.getJSONObject(i).getString("LastModifiedDate"))));
+										+ "###" + userfullname + "###" + 
+												customTabArray.getJSONObject(i).getString("LastModifiedDate")));
 						xmlcustomTabtype.appendChild(xmlcustomTabMembers);
 
 					} catch (Exception e) {
@@ -664,8 +663,8 @@ public class MetadataResource {
 						Element xmldashboardMembers = doc.createElement("members");
 						xmldashboardMembers.appendChild(
 								doc.createTextNode(dashboardArray.getJSONObject(i).getString("DeveloperName") + "###"
-										+ userfullname + "###" + RestResourceURL.getSuffixDate(
-												dashboardArray.getJSONObject(i).getString("LastModifiedDate"))));
+										+ userfullname + "###" + 
+												dashboardArray.getJSONObject(i).getString("LastModifiedDate")));
 						xmldashboardtype.appendChild(xmldashboardMembers);
 
 					} catch (Exception e) {
@@ -706,8 +705,8 @@ public class MetadataResource {
 						Element xmlemailTemplateListMembers = doc.createElement("members");
 						xmlemailTemplateListMembers
 								.appendChild(doc.createTextNode(emailTemplateArray.getJSONObject(i).getString("Name")
-										+ "###" + userfullname + "###" + RestResourceURL.getSuffixDate(
-												emailTemplateArray.getJSONObject(i).getString("LastModifiedDate"))));
+										+ "###" + userfullname + "###" + 
+												emailTemplateArray.getJSONObject(i).getString("LastModifiedDate")));
 						xmlemailTemplateListtype.appendChild(xmlemailTemplateListMembers);
 
 					} catch (Exception e) {
@@ -746,8 +745,8 @@ public class MetadataResource {
 						Element xmlfieldSetMembers = doc.createElement("members");
 						xmlfieldSetMembers.appendChild(
 								doc.createTextNode(fieldSetArray.getJSONObject(i).getString("DeveloperName") + "###"
-										+ userfullname + "###" + RestResourceURL.getSuffixDate(
-												fieldSetArray.getJSONObject(i).getString("LastModifiedDate"))));
+										+ userfullname + "###" + 
+												fieldSetArray.getJSONObject(i).getString("LastModifiedDate")));
 						xmlfieldSettype.appendChild(xmlfieldSetMembers);
 
 					} catch (Exception e) {
@@ -786,8 +785,8 @@ public class MetadataResource {
 						Element xmlflexiPageListMembers = doc.createElement("members");
 						xmlflexiPageListMembers.appendChild(
 								doc.createTextNode(flexiPageArray.getJSONObject(i).getString("DeveloperName") + "###"
-										+ userfullname + "###" + RestResourceURL.getSuffixDate(
-												flexiPageArray.getJSONObject(i).getString("LastModifiedDate"))));
+										+ userfullname + "###" + 
+												flexiPageArray.getJSONObject(i).getString("LastModifiedDate")));
 						xmlflexiPageListtype.appendChild(xmlflexiPageListMembers);
 
 					} catch (Exception e) {
@@ -828,8 +827,8 @@ public class MetadataResource {
 						Element xmlflowMembers = doc.createElement("members");
 						xmlflowMembers
 								.appendChild(doc.createTextNode(flowFullname.getJSONObject(0).getString("FullName")
-										+ "###" + userfullname + "###" + RestResourceURL.getSuffixDate(
-												flowArray.getJSONObject(i).getString("LastModifiedDate"))));
+										+ "###" + userfullname + "###" + 
+												flowArray.getJSONObject(i).getString("LastModifiedDate")));
 						xmlflowtype.appendChild(xmlflowMembers);
 
 					} catch (Exception e) {
@@ -871,8 +870,8 @@ public class MetadataResource {
 						Element xmlglobalValueSetMembers = doc.createElement("members");
 						xmlglobalValueSetMembers.appendChild(
 								doc.createTextNode(globalValueSetArray.getJSONObject(i).getString("DeveloperName")
-										+ "###" + userfullname + "###" + RestResourceURL.getSuffixDate(
-												globalValueSetArray.getJSONObject(i).getString("LastModifiedDate"))));
+										+ "###" + userfullname + "###" + 
+												globalValueSetArray.getJSONObject(i).getString("LastModifiedDate")));
 						xmlglobalValueSettype.appendChild(xmlglobalValueSetMembers);
 
 					} catch (Exception e) {
@@ -913,8 +912,8 @@ public class MetadataResource {
 						Element xmlhomePageLayoutMembers = doc.createElement("members");
 						xmlhomePageLayoutMembers
 								.appendChild(doc.createTextNode(homePageLayoutArray.getJSONObject(i).getString("Name")
-										+ "###" + userfullname + "###" + RestResourceURL.getSuffixDate(
-												homePageLayoutArray.getJSONObject(i).getString("LastModifiedDate"))));
+										+ "###" + userfullname + "###" + 
+												homePageLayoutArray.getJSONObject(i).getString("LastModifiedDate")));
 						xmlhomePageLayouttype.appendChild(xmlhomePageLayoutMembers);
 
 					} catch (Exception e) {
@@ -968,8 +967,8 @@ public class MetadataResource {
 					Element xmlcustomfieldMembers = doc.createElement("members");
 					xmlcustomfieldMembers.appendChild(
 							doc.createTextNode(customObjectName + "." + layoutArray.getJSONObject(j).getString("Name")
-									+ "###" + userfullname + "###" + RestResourceURL.getSuffixDate(
-											layoutArray.getJSONObject(j).getString("LastModifiedDate"))));
+									+ "###" + userfullname + "###" + 
+											layoutArray.getJSONObject(j).getString("LastModifiedDate")));
 					xmlcustomfieldtype.appendChild(xmlcustomfieldMembers);
 
 				}
@@ -1008,8 +1007,8 @@ public class MetadataResource {
 						Element xmlpermissionSetMembers = doc.createElement("members");
 						xmlpermissionSetMembers
 								.appendChild(doc.createTextNode(permissionSetArray.getJSONObject(i).getString("Name")
-										+ "###" + userfullname + "###" + RestResourceURL.getSuffixDate(
-												permissionSetArray.getJSONObject(i).getString("LastModifiedDate"))));
+										+ "###" + userfullname + "###" + 
+												permissionSetArray.getJSONObject(i).getString("LastModifiedDate")));
 						xmlpermissionSettype.appendChild(xmlpermissionSetMembers);
 
 					} catch (Exception e) {
@@ -1047,8 +1046,7 @@ public class MetadataResource {
 						}
 						Element xmlprofileMembers = doc.createElement("members");
 						xmlprofileMembers.appendChild(doc.createTextNode(profileArray.getJSONObject(i).getString("Name")
-								+ "###" + userfullname + "###" + RestResourceURL
-										.getSuffixDate(profileArray.getJSONObject(i).getString("LastModifiedDate"))));
+								+ "###" + userfullname + "###" +profileArray.getJSONObject(i).getString("LastModifiedDate")));
 						xmlprofiletype.appendChild(xmlprofileMembers);
 
 					} catch (Exception e) {
@@ -1088,8 +1086,8 @@ public class MetadataResource {
 						Element xmlrecordTypeMembers = doc.createElement("members");
 						xmlrecordTypeMembers
 								.appendChild(doc.createTextNode(recordTypeArray.getJSONObject(i).getString("Name")
-										+ "###" + userfullname + "###" + RestResourceURL.getSuffixDate(
-												recordTypeArray.getJSONObject(i).getString("LastModifiedDate"))));
+										+ "###" + userfullname + "###" + 
+												recordTypeArray.getJSONObject(i).getString("LastModifiedDate")));
 						xmlrecordTypetype.appendChild(xmlrecordTypeMembers);
 
 					} catch (Exception e) {
@@ -1128,8 +1126,8 @@ public class MetadataResource {
 						Element xmlreportMembers = doc.createElement("members");
 						xmlreportMembers
 								.appendChild(doc.createTextNode(reportArray.getJSONObject(i).getString("DeveloperName")
-										+ "###" + userfullname + "###" + RestResourceURL.getSuffixDate(
-												reportArray.getJSONObject(i).getString("LastModifiedDate"))));
+										+ "###" + userfullname + "###" + 
+												reportArray.getJSONObject(i).getString("LastModifiedDate")));
 						xmlreporttype.appendChild(xmlreportMembers);
 
 					} catch (Exception e) {
@@ -1170,8 +1168,8 @@ public class MetadataResource {
 						Element xmlstaticResourceMembers = doc.createElement("members");
 						xmlstaticResourceMembers
 								.appendChild(doc.createTextNode(staticResourceArray.getJSONObject(i).getString("Name")
-										+ "###" + userfullname + "###" + RestResourceURL.getSuffixDate(
-												staticResourceArray.getJSONObject(i).getString("LastModifiedDate"))));
+										+ "###" + userfullname + "###" + 
+												staticResourceArray.getJSONObject(i).getString("LastModifiedDate")));
 						xmlstaticResourcetype.appendChild(xmlstaticResourceMembers);
 
 					} catch (Exception e) {
@@ -1208,8 +1206,7 @@ public class MetadataResource {
 						}
 						Element xmlUserMembers = doc.createElement("members");
 						xmlUserMembers.appendChild(doc.createTextNode(UserArray.getJSONObject(i).getString("Name")
-								+ "###" + userfullname + "###" + RestResourceURL
-										.getSuffixDate(UserArray.getJSONObject(i).getString("LastModifiedDate"))));
+								+ "###" + userfullname + "###" + UserArray.getJSONObject(i).getString("LastModifiedDate")));
 						xmlUserType.appendChild(xmlUserMembers);
 
 					} catch (Exception e) {
@@ -1252,8 +1249,8 @@ public class MetadataResource {
 						}
 						Element xmlvalidationRuleMembers = doc.createElement("members");
 						xmlvalidationRuleMembers.appendChild(doc.createTextNode(
-								objectname + "###" + userfullname + "###" + RestResourceURL.getSuffixDate(
-										validationRuleArray.getJSONObject(i).getString("LastModifiedDate"))));
+								objectname + "###" + userfullname + "###" + 
+										validationRuleArray.getJSONObject(i).getString("LastModifiedDate")));
 						xmlvalidationRuletype.appendChild(xmlvalidationRuleMembers);
 
 					} catch (Exception e) {
@@ -1291,8 +1288,7 @@ public class MetadataResource {
 						}
 						Element xmlWebLinkMembers = doc.createElement("members");
 						xmlWebLinkMembers.appendChild(doc.createTextNode(WebLinArray.getJSONObject(i).getString("Name")
-								+ "###" + userfullname + "###" + RestResourceURL
-										.getSuffixDate(WebLinArray.getJSONObject(i).getString("LastModifiedDate"))));
+								+ "###" + userfullname + "###" +WebLinArray.getJSONObject(i).getString("LastModifiedDate")));
 						xmlWebLinkType.appendChild(xmlWebLinkMembers);
 
 					} catch (Exception e) {
@@ -1336,8 +1332,8 @@ public class MetadataResource {
 						Element xmlobjworkFlowAlertMembers = doc.createElement("members");
 						xmlobjworkFlowAlertMembers
 								.appendChild(doc.createTextNode(jsonworkflowaler.getJSONObject(0).getString("FullName")
-										+ "###" + userfullname + "###" + RestResourceURL.getSuffixDate(
-												objWorkFlowAlert.getJSONObject(k).getString("LastModifiedDate"))));
+										+ "###" + userfullname + "###" + 
+												objWorkFlowAlert.getJSONObject(k).getString("LastModifiedDate")));
 						xmlobjWorkFlowAlerttype.appendChild(xmlobjworkFlowAlertMembers);
 
 					}
@@ -1381,8 +1377,8 @@ public class MetadataResource {
 						xmlworkflowFieldUpdateMembers.appendChild(doc.createTextNode(workflowFieldUpdateArray
 								.getJSONObject(i).getString("SourceTableEnumOrId") + "."
 								+ workflowFieldUpdateArray.getJSONObject(i).getString("Name") + "###" + userfullname
-								+ "###" + RestResourceURL.getSuffixDate(
-										workflowFieldUpdateArray.getJSONObject(i).getString("LastModifiedDate"))));
+								+ "###" + 
+										workflowFieldUpdateArray.getJSONObject(i).getString("LastModifiedDate")));
 						xmlworkflowFieldUpdatetype.appendChild(xmlworkflowFieldUpdateMembers);
 
 					} catch (Exception e) {
@@ -1424,8 +1420,8 @@ public class MetadataResource {
 						xmlworkflowRuleMembers.appendChild(
 								doc.createTextNode(workflowRuleList.getJSONObject(i).getString("TableEnumOrId") + "."
 										+ workflowRuleList.getJSONObject(i).getString("Name") + "###" + userfullname
-										+ "###" + RestResourceURL.getSuffixDate(
-												workflowRuleList.getJSONObject(i).getString("LastModifiedDate"))));
+										+ "###" + 
+												workflowRuleList.getJSONObject(i).getString("LastModifiedDate")));
 						xmlworkflowRuletype.appendChild(xmlworkflowRuleMembers);
 
 					} catch (Exception e) {
@@ -1467,8 +1463,8 @@ public class MetadataResource {
 						Element xmlobjWorkFlowTaskMembers = doc.createElement("members");
 						xmlobjWorkFlowTaskMembers
 								.appendChild(doc.createTextNode(jsonworkflowaler.getJSONObject(0).getString("FullName")
-										+ "###" + userfullname + "###" + RestResourceURL.getSuffixDate(
-												objWorkFlowTask.getJSONObject(k).getString("LastModifiedDate"))));
+										+ "###" + userfullname + "###" + 
+												objWorkFlowTask.getJSONObject(k).getString("LastModifiedDate")));
 						xmlobjWorkFlowTasktype.appendChild(xmlobjWorkFlowTaskMembers);
 
 					}

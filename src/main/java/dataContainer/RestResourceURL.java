@@ -1,9 +1,5 @@
 package dataContainer;
 
-import java.text.Format;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 public class RestResourceURL {
 	static final String baseurl = "/services/data/v42.0/";
@@ -29,7 +25,7 @@ public class RestResourceURL {
 		return baseurl+"query/?q="+query;
 	}
 	
-	public static String NumSuffix(final Object number) {
+	/*public static String NumSuffix(final Object number) {
 		int n = Integer.parseInt(number.toString());
 		if (n >= 11 && n <= 13) {
 			return "th";
@@ -61,5 +57,5 @@ public class RestResourceURL {
 		}
 		return sb.toString();
 
-	}
+	}*/
 }
